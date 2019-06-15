@@ -46,8 +46,6 @@ html,body{
 .second-section{
   width: 100%;
   background-color: cadetblue;
-  height: 50vh;
-
 }
 
 .second-section-wrapper{
@@ -112,6 +110,21 @@ html,body{
   grid-template-rows: 1fr 1fr; */
 }
 
+
+@media(max-width: 1000px){
+  .stack-grid{
+    max-width: 595px;
+  }
+}
+
+@media(max-width: 500px){
+  .stack-grid{
+    max-width: 299px;
+  }
+
+}
+
+
 .stack-container{
   width: 100px;
   height: auto;
@@ -145,21 +158,12 @@ html,body{
 }
 
 .fourth-section-container{
-  /* grid layout */
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; */
   display: flex;
-  flex-wrap: wrap;
-
+  flex-direction: column;
 }
 
 .project-div{
-  /* height: 200px; */
-  /* width: 200px; */
   background-color: rgb(127, 208, 255);
-  width: 50%;
   text-align: center;
-  box-sizing: border-box;
 
 }
