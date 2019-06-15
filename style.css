@@ -106,6 +106,7 @@ html,body{
   justify-content: space-around;
   list-style-type: none;
   max-width: 1000px;
+  text-align: center;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr; */
@@ -115,7 +116,9 @@ html,body{
   width: 100px;
   height: auto;
   text-align: center;
-  margin: 10px;
+  /* margin: 10px; */
+  /* padding: 10px 20px 0px 20px; */
+  font-size: 16px;
 
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom, aquamarine 50%, white 50%);
@@ -124,9 +127,15 @@ html,body{
   transition: background-position 0.5s;
 }
 
+.stack-container svg {
+  width: 70%;
+  padding-top: 5px;
+}
+
 .stack-container:hover{
   background-position: 0 -100%;
 }
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ Fourth Section ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
