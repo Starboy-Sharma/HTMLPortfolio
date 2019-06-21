@@ -157,14 +157,25 @@ html,body{
   background-color: teal;
 }
 
-.fourth-section-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .project-div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
   background-color: rgb(127, 208, 255);
   text-align: center;
+}
 
+.project-description{
+  padding: 5%;
+}
+
+.project-picture{
+  padding: 5%;
+}
+
+.project-picture img {
+  height: 30%;
 }
