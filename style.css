@@ -179,3 +179,19 @@ html,body{
 .project-picture img {
   height: 30%;
 }
+
+/* --------------------------- contact me section -------------------------------- */
+
+
+.contact-me-wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.contact-me-wrapper ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around
+}
