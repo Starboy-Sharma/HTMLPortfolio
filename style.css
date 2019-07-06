@@ -73,7 +73,7 @@ html,body{
 
 .about-me-description{
   /* font-family: "karla"; */
-  margin: 0;
+  margin: 0 0 50 0;
 
 }
 
@@ -86,7 +86,7 @@ html,body{
   background-color: aquamarine;
   width: 100%;
   /* height: 50vh; */
-  background: url(./images/33806127732_4fc20b444d_k.jpg);
+  background: url(./images/DV_Layers-X2.jpg);
   background-attachment: fixed;
   background-position: left;
   background-size: cover;
@@ -145,10 +145,10 @@ html,body{
   transition: background-position 0.5s;
 }
 
-.stack-container svg {
-  width: 70%;
+.stack-container i {
+  font-size: 75px;
   padding-top: 5px;
-  fill: white;
+
 }
 
 .stack-container:hover{
