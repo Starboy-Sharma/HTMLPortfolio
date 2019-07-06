@@ -134,8 +134,8 @@ html,body{
   width: 100px;
   height: auto;
   text-align: center;
-  /* margin: 10px; */
-  /* padding: 10px 20px 0px 20px; */
+  margin: 20px;
+  padding: 10px 20px 0px 20px;
   font-size: 16px;
 
   background-size: 100% 200%;
@@ -146,11 +146,15 @@ html,body{
 }
 
 .stack-container i {
-  font-size: 75px;
+  font-size: 80px;
   padding-top: 5px;
 
 }
 
+
+.devicon-sass-original.colored{
+  color:#f7b;
+}
 .stack-container:hover{
   background-position: 0 -100%;
 }
