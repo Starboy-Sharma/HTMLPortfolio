@@ -3,34 +3,48 @@
   <!-- Links to icons and such -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="./style.css">
+  <script src="functions.js"></script>
   <!-- Beginning of the first section of the portfolio -->
-    <section id="first-section">
+  <nav class="navbar-div">
 
-      <div class="first-section-wrapper">
-        <div class="navbar-div">
-          <ul>
-            <li>
-              <a href="#second-section">About</a>
-            </li>
 
-            <li>
-              <a href="#third-section">Skills</a>
-            </li>
+    <a class="borger-icon" onclick="openNav()">
+      <div class="borger"></div>
+      <div class="borger"></div>
+      <div class="borger"></div>
+    </a>
+    
+    <div class="side-nav">
+      <ul>
+        <li>
+          <a href="#second-section">About</a>
+        </li>
+        
+        <li>
+          <a href="#third-section">Skills</a>
+        </li>
+        
+        <li>
+          <a href="#fourth-section">Portfolio</a>
+        </li>
+        
+        <li>
+          <a href="#contact-me-section">Contact</a>
+        </li>
+      </ul>
+    </div>
+      
+  </nav>
 
-            <li>
-              <a href="#fourth-section">Portfolio</a>
-            </li>
+  <section id="first-section">
+        
+    <div class="first-section-wrapper">
+      <h1 class="name-text">Farid Manafov</h1>
+      <!-- later make this into a wheel -->
+      <h4 class="headline-text">Web Developer </h4>
+    </div>
+      
 
-            <li>
-              <a href="#contact-me-section">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <a href="#second-section">skip</a>
-        <h1 class="name-text">Farid Manafov</h1>
-          <!-- later make this into a wheel -->
-        <h4 class="headline-text">Web Developer </h4>
-      </div>
 
     </section>
 
@@ -128,14 +142,10 @@
         </div>
 
         <div class="project-description">
-          <h3>Project header</h3>
-          <p>This project does a lot of cool stuff! It does this and this and some of that, woo!</p>
-          <div class="project-stacks">
-            <span>HTML</span>
-            <span>HTML</span>
-            <span>HTML</span>
-            <span>HTML</span>
-          </div>
+          <h3>Draw my thing (not its real name)</h3>
+          <p>A drawing game website where friends and random people compete by guessing and drawing different things. Built with
+            ReactJS</p>
+
         </div>
 
       </div>

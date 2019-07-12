@@ -4,6 +4,7 @@
 html,body{
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   /* font-family: "Raleway"; */
 }
 
@@ -30,8 +31,75 @@ html,body{
 
 .first-section-wrapper{
   font-size: 50px;
-  /* margin-bottom: 60%; */
   text-align: center;
+}
+
+.borger{
+  width: 28px;
+  height: 4px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+/* The side navigation menu */
+.side-nav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.side-nav ul li a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.side-nav ul li a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.side-nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.navbar-div{
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+}
+
+.navbar-div ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+.navbar-div ul,li,a{
+  text-decoration: none;
 }
 
 .name-text{
@@ -126,7 +194,6 @@ html,body{
   .stack-grid{
     max-width: 299px;
   }
-
 }
 
 
@@ -178,11 +245,24 @@ html,body{
 }
 
 .project-description{
-  padding: 5%;
+  padding: 5% 4%;
+  max-width: 500px;
 }
 
 .project-picture{
-  padding: 5%;
+  padding: 5% 4%;
+}
+
+@media(max-width: 1008px){
+  .project-picture{
+    padding: 5% 5% 0 5%;
+  }
+}
+
+@media(max-width: 1008px){
+  .project-description{
+    padding: 2% 5% 5% 5%;
+  }
 }
 
 .project-picture img {
@@ -192,6 +272,8 @@ html,body{
 .project-links{
   margin: 5% 0 0 0;
 }
+
+
 
 /* --------------------------- contact me section -------------------------------- */
 
@@ -215,13 +297,29 @@ html,body{
   margin-left: 50%;
 }
 
+@media(max-width: 500px){
+  .contact-me-wrapper{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+
+  }
+}
+
 .contact-me-wrapper ul{
   display: flex;
   flex-direction: row;
   list-style: none;
   margin: 0;
   padding: 0;
+}
 
+@media(max-width: 500px){
+  .contact-me-wrapper ul{
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .contact-me-wrapper li{
