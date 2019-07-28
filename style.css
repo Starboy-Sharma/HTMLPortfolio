@@ -56,18 +56,24 @@ html,body{
   margin: 0;
   padding: 2%;
   background: #F3D9DC;
+  list-style: none;
+}
+
+.header-nav ul li a{
+  text-decoration: none;
 }
 
 .header-nav{
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    font-size: 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  font-size: 18px;
 }
 
 .header-nav.open{
-    height: 100px;
-    transition: max-height 0.5s;
+  background-color: red;
+  max-height: 100px;
+  transition: max-height 0.5s;
 }
 
 
