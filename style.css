@@ -16,17 +16,24 @@ html,body{
   align-items: center;
   justify-content: center;
   /* flex-flow: wrap column; */
-  background: url(./images/New/art-black-background-blur-1040499.jpg);
-  background-attachment: fixed;
-  background-position: left;
-  background-size: cover;
+  /* background: url(./images/New/art-black-background-blur-1040499.jpg); */
+  /* background-attachment: fixed; */
+  /* background-position: left; */
+  /* background-size: cover; */
   height: 100vh;
 }
 
+.first-section-image{
+  position: fixed;
+  z-index: -200;
+  width: 100%;
+}
+
 .first-section-wrapper{
-  /* position: fixed; */
+  position: fixed;
   font-size: 50px;
   text-align: center;
+  z-index: -100;
 }
 
 .burger-icon{
@@ -88,8 +95,10 @@ html,body{
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~ Second Section ~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #second-section{
+  position: relative;
   width: 100%;
   background-color: rgb(17,31,34);
+  z-index: 100;
 }
 
 .second-section-wrapper{
@@ -263,7 +272,9 @@ html,body{
 /* --------------------------- contact me section -------------------------------- */
 
 #contact-me-section{
-
+  position: relative;
+  z-index: 100;
+  background: wheat;
 }
 
 .footer-name{
