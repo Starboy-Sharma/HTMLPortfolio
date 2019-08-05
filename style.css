@@ -6,6 +6,11 @@ html,body{
   padding: 0;
   scroll-behavior: smooth;
   font-family: "Raleway";
+  color: rgb(188, 147, 26);
+}
+
+#second-section, #third-section, #fourth-section, #contact-me-section{
+  background-color: rgb(17,31,34);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~First Section ~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -15,11 +20,7 @@ html,body{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-flow: wrap column; */
-  /* background: url(./images/New/art-black-background-blur-1040499.jpg); */
-  /* background-attachment: fixed; */
-  /* background-position: left; */
-  /* background-size: cover; */
+
   height: 100vh;
 }
 
@@ -27,6 +28,7 @@ html,body{
   position: fixed;
   z-index: -200;
   width: 100%;
+  height: 100vh;
 }
 
 .first-section-wrapper{
@@ -70,7 +72,7 @@ html,body{
 
 .header-nav ul li a{
   text-decoration: none;
-  color: rgba(188, 147, 26, 0.8);
+  color: rgb(188, 147, 26);
   font-weight: bold;
 }
 
@@ -128,7 +130,7 @@ html,body{
   line-height: 1.5;
   color: rgba(232, 184, 45, 0.7);
   font-family: "karla";
-  margin: 0 0 50 0;
+  margin: 0 0 50px 0;
   letter-spacing: 3px;
 
 }
@@ -139,13 +141,8 @@ html,body{
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~ Third Section ~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #third-section{
-  background-color: aquamarine;
   width: 100%;
-  /* height: 50vh; */
-  background: url(./images/DV_Layers-X2.jpg);
-  background-attachment: fixed;
-  background-position: left;
-  background-size: cover;
+  background: rgb(17,31,34);
 }
 
 .third-section-wrapper{
@@ -171,6 +168,9 @@ html,body{
   grid-template-rows: 1fr 1fr; */
 }
 
+.third-section-header, .stack-header{
+  color: rgb(188, 147, 26);
+}
 
 @media(max-width: 1000px){
   .stack-grid{
@@ -194,7 +194,7 @@ html,body{
   font-size: 16px;
 
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, transparent 50%, white 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, black 50%);
   -webkit-transition: background-position 0.5s;
   -moz-transition: background-position 0.5s;
   transition: background-position 0.5s;
@@ -218,18 +218,17 @@ html,body{
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ Fourth Section ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #fourth-section{
-  background-color: teal;
 }
 
 .project-div{
   display: flex;
-  /* flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; */
   justify-content: space-evenly;
-  background-color: rgb(127, 208, 255);
   text-align: center;
+  font-weight: bold;
+}
+
+#row-2 .project-description{
+  order: -1;
 }
 
 .project-description{
@@ -267,6 +266,12 @@ html,body{
   margin: 5% 0 0 0;
 }
 
+.project-links a{
+  text-decoration: none;
+  list-style: none;
+  color: rgb(188, 147, 26);
+}
+
 
 
 /* --------------------------- contact me section -------------------------------- */
@@ -274,7 +279,14 @@ html,body{
 #contact-me-section{
   position: relative;
   z-index: 100;
-  background: wheat;
+  
+}
+
+#contact-me-section a {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(188, 147, 26);
+  font-weight: bold;
 }
 
 .footer-name{
