@@ -339,10 +339,7 @@ html,body{
 }
 
 .footer-line{
-  background-color: black;
-  /* position: absolute; */
-  
-
-  width: 50px;
+  background-color: rgb(188, 147, 26);
+  width: 400px;
   height: 2px;
 }
