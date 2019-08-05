@@ -260,7 +260,7 @@ html,body{
 }
 
 .project-picture img {
-  height: 30%;
+  width: 300px;
 }
 
 .project-links{
