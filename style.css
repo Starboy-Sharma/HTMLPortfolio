@@ -20,7 +20,6 @@ html,body{
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 100vh;
 }
 
@@ -99,7 +98,7 @@ html,body{
 #second-section{
   position: relative;
   width: 100%;
-  background-color: rgb(17,31,34);
+  background-color: rgb(23, 40, 43);
   z-index: 100;
 }
 
@@ -142,7 +141,8 @@ html,body{
 
 #third-section{
   width: 100%;
-  background: rgb(17,31,34);
+  background-color: rgb(17,31,34);
+  padding-bottom: 30px;
 }
 
 .third-section-wrapper{
@@ -194,7 +194,8 @@ html,body{
   font-size: 16px;
 
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, transparent 50%, black 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, rgb(23, 40, 43)
+  50%);
   -webkit-transition: background-position 0.5s;
   -moz-transition: background-position 0.5s;
   transition: background-position 0.5s;
@@ -226,6 +227,10 @@ html,body{
 
 #row-2 .project-description{
   order: -1;
+}
+
+#row-1, #row-3{
+  background-color: rgb(23, 40, 43);
 }
 
 .project-description{
