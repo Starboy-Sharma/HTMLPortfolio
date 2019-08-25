@@ -75,7 +75,11 @@ html,body{
   font-weight: bold;
 }
 
-
+@media(max-width: 800px){
+  .header-nav ul{
+    flex-direction: column;
+  }
+}
 
 .header-nav.open{
   max-height: 100px;
