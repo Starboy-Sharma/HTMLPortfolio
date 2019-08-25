@@ -217,9 +217,6 @@ html,body{
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~ Fourth Section ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-#fourth-section{
-}
-
 .project-div{
   display: flex;
   justify-content: space-evenly;
@@ -234,7 +231,6 @@ html,body{
 .project-description{
   padding: 5% 4%;
   max-width: 500px;
-
 }
 
 .project-picture{
@@ -250,12 +246,28 @@ html,body{
   .project-picture{
     padding: 5% 5% 0 5%;
   }
-}
 
-@media(max-width: 1008px){
   .project-description{
     padding: 2% 5% 5% 5%;
   }
+}
+
+@media(max-width: 800px){
+  .project-div{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #row-2{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  /* #row-4{
+    flex-direction: column-reverse;
+    align-items: center;
+  } */
+  
 }
 
 .project-picture img {
