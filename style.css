@@ -5,7 +5,7 @@ html,body{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: "Raleway";
+  font-family: "Karla";
   color: rgb(188, 147, 26);
 }
 
@@ -238,12 +238,16 @@ html,body{
 }
 
 .project-description{
-  padding: 5% 4%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4% 0;
   max-width: 500px;
 }
 
 .project-picture{
-  padding: 5% 4%;
+  padding: 4% 0;
   width: 35%;
   display: flex;
   flex-direction: column;
