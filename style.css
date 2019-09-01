@@ -229,7 +229,7 @@ html,body{
   font-weight: bold;
 }
 
-#row-2 .project-description{
+#row-2 .project-description, #row-4 .project-description{
   order: -1;
 }
 
@@ -242,12 +242,16 @@ html,body{
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: 4% 0;
+  margin-bottom: 4%;
   max-width: 500px;
 }
 
+.project-description p{
+  margin-top: 0%;
+}
+
 .project-picture{
-  padding: 4% 0;
+  margin: 3% 0;
   width: 35%;
   display: flex;
   flex-direction: column;
@@ -261,7 +265,7 @@ html,body{
   }
 
   .project-description{
-    padding: 2% 5% 5% 5%;
+    margin: 2% 5% 5% 5%;
   }
 }
 
@@ -271,16 +275,10 @@ html,body{
     align-items: center;
   }
 
-  #row-2{
+  #row-2, #row-4{
     flex-direction: column-reverse;
     align-items: center;
   }
-
-  /* #row-4{
-    flex-direction: column-reverse;
-    align-items: center;
-  } */
-  
 }
 
 .project-picture img {
@@ -288,10 +286,12 @@ html,body{
 }
 
 .project-links{
-  margin: 5% 0 0 0;
+  margin: 5% 0;
+  width: 100%;
 }
 
 .project-links a{
+  margin: 0 5%;
   text-decoration: none;
   list-style: none;
   color: rgb(188, 147, 26);
@@ -304,7 +304,7 @@ html,body{
 #contact-me-section{
   position: relative;
   z-index: 100;
-  
+  background-color: rgb(23, 40, 43);
 }
 
 #contact-me-section a {
@@ -336,7 +336,6 @@ html,body{
     text-align: center;
     width: 100%;
     justify-content: center;
-
   }
 }
 
