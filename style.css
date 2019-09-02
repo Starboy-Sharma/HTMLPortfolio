@@ -11,6 +11,7 @@ html,body{
 
 #second-section, #third-section, #fourth-section, #contact-me-section{
   background-color: rgb(17,31,34);
+  position: relative;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~First Section ~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -21,6 +22,10 @@ html,body{
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-image: url('./images/New/art-black-background-blur-1040499.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right;
 }
 
 .first-section-image{
@@ -30,11 +35,12 @@ html,body{
   height: 100vh;
 }
 
+
+
 .first-section-wrapper{
   position: fixed;
   font-size: 50px;
   text-align: center;
-  z-index: -100;
 }
 
 .burger-icon{
