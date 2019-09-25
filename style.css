@@ -117,17 +117,42 @@ html,body{
 .second-section-wrapper{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
 
+@media(max-width: 1000px){
+  .second-section-wrapper{
+    flex-direction: column;
+    
+  }
+}
+
+.second-section-face-image{
+  width: 25%;
+  margin: 0% 0% 50px 5%;
+}
+
+@media(max-width: 1000px){
+  .second-section-face-image{
+    width: 43%;
+    margin: 0 0 25px 0;
+  }
+}
+
+.second-section-face-image img{
+  max-width: 100%;
 }
 
 .about-me-content{
   font-family: "karla";
-  display: flex;
-  max-width: 80%;
-  flex-direction: column; 
-  justify-content: center;
+  width: 50%;
   font-size: 20px;
+}
+
+@media(max-width: 1000px){
+  .about-me-content{
+    width: 70%;
+  }
 }
 
 .about-me-header{
@@ -151,8 +176,8 @@ html,body{
   color: rgba(232, 184, 45, 0.7);
   font-family: "karla";
   margin: 0 0 50px 0;
-  letter-spacing: 2px;
-  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
 }
 
 
@@ -206,7 +231,6 @@ html,body{
     max-width: 299px;
   }
 }
-
 
 .stack-container{
   width: 100px;
@@ -295,6 +319,7 @@ html,body{
 @media(max-width: 1008px){
   .project-picture{
     padding: 5% 5% 0 5%;
+    margin: 2% 0 0 0;
   }
 
   .project-description{
