@@ -180,6 +180,9 @@ html,body{
   font-size: 1.4rem;
 }
 
+.about-me-description span{
+  color: #ff6447; 
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~ Third Section ~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -305,6 +308,10 @@ html,body{
 
 .project-description p{
   margin-top: 0%;
+}
+
+.project-description p span{
+    color: #ff6447; 
 }
 
 .project-picture{
