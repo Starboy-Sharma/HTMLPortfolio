@@ -379,6 +379,14 @@ html,body{
   font-weight: bold;
 }
 
+@media(max-width: 800px){
+  #contact-me-section ul li {
+    padding: 10px;
+    margin: 20px;
+    font-size: 25px;
+  }
+}
+
 .footer-name{
   margin: 4% 0 0 0;
 }
@@ -412,10 +420,11 @@ html,body{
   padding: 0;
 }
 
-@media(max-width: 500px){
+@media(max-width: 800px){
   .contact-me-wrapper ul{
     text-align: center;
     justify-content: center;
+    margin: auto;
   }
 }
 
@@ -431,4 +440,10 @@ html,body{
   background-color: rgb(188, 147, 26);
   width: 400px;
   height: 2px;
+}
+
+@media(max-width: 800px){
+  .footer-line{
+    width: 0;
+  }
 }
