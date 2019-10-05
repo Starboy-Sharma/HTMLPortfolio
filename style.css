@@ -384,11 +384,11 @@ html,body{
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 50%;
+  width: 45%;
   margin-left: 55%;
 }
 
-@media(max-width: 500px){
+@media(max-width: 800px){
   .contact-me-wrapper{
     margin: 0;
     text-align: center;
