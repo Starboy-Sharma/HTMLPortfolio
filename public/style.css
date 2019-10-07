@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100');
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+html,body{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Karla";
+  color: rgb(188, 147, 26);
+}
+
+#second-section, #third-section, #fourth-section, #contact-me-section{
+  background-color: rgb(17,31,34);
+  position: relative;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~First Section ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#first-section{
+  font-family: "Raleway";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('./images/astronomy-image.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right;
+}
+
+.first-section-image{
+  position: fixed;
+  z-index: -200;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+.first-section-wrapper{
+  position: fixed;
+  font-size: 50px;
+  text-align: center;
+}
+
+.burger-icon{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 30px;
+}
+
+.burger{
+  width: 28px;
+  height: 4px;
+  background-color: white;
+  margin: 4px 0;
+  
+}
+
+/* The navigation menu */
+.header-nav{
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  font-size: 18px;
+}
+
+.header-nav ul{
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 2%;
+  background-color: rgb(17,31,34);
+  list-style: none;
+}
+
+@media screen and (max-width: 1000px){
+  .header-nav ul{
+    flex-direction: column;
+    text-align: center;
+    font-size: 35px;
+  }
+}
+
+.header-nav ul li a{
+  text-decoration: none;
+  color: rgb(188, 147, 26);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px){
+  .header-nav ul li{
+    margin: 20px;
+  }
+}
+
+.header-nav.open{
+  max-height: 100%;
+  transition: max-height 0.5s;
+}
+
+.name-text{
+  margin: 0;
+  color: white;
+}
+
+.headline-text{
+  margin-block-start: 1%;
+  color: white;
+
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ Second Section ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#second-section{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background-color: rgb(23, 40, 43);
+  z-index: 100;
+}
+
+.second-section-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1000px){
+  .second-section-wrapper{
+    flex-direction: column;
+    
+  }
+}
+
+.second-section-face-image{
+  width: 25%;
+  margin: 0% 0% 50px 5%;
+}
+
+@media screen and (max-width: 1000px){
+  .second-section-face-image{
+    width: 43%;
+    margin: 0 0 25px 0;
+  }
+}
+
+.second-section-face-image img{
+  max-width: 100%;
+}
+
+.about-me-content{
+  font-family: "karla";
+  width: 50%;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1000px){
+  .about-me-content{
+    width: 70%;
+  }
+}
+
+.about-me-header{
+  color: rgba(232, 184, 45, 0.7);
+  text-align: center;
+  font-size: 30px;
+
+}
+
+
+.about-me-image{
+  width: 60%;
+}
+
+.about-me-image img{
+  width: 50%;
+}
+
+.about-me-description{
+  line-height: 1.5;
+  color: rgba(232, 184, 45, 0.7);
+  font-family: "karla";
+  margin: 0 0 50px 0;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+}
+
+.about-me-description span{
+  color: #ff6447; 
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~ Third Section ~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#third-section{
+  width: 100%;
+  background-color: rgb(17,31,34);
+  padding-bottom: 30px;
+}
+
+.third-section-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; 
+
+}
+
+.stack-grid{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  max-width: 1000px;
+  text-align: center;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; */
+}
+
+.third-section-header{
+  font-size: 30px;
+}
+
+.third-section-header, .stack-header{
+  color: rgb(188, 147, 26);
+}
+
+@media screen and (max-width: 1000px){
+  .stack-grid{
+    max-width: 595px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .stack-grid{
+    max-width: 299px;
+  }
+}
+
+.stack-container{
+  width: 100px;
+  height: auto;
+  text-align: center;
+  margin: 20px;
+  padding: 10px 20px 0px 20px;
+  font-size: 16px;
+
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, transparent 50%, rgb(23, 40, 43)
+  50%);
+  -webkit-transition: background-position 0.5s;
+  -moz-transition: background-position 0.5s;
+  transition: background-position 0.5s;
+}
+
+.stack-container i {
+  font-size: 80px;
+  padding-top: 5px;
+
+}
+
+
+.devicon-sass-original.colored{
+  color:#f7b;
+}
+.stack-container:hover{
+  background-position: 0 -100%;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~ Fourth Section ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#fourth-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(23, 40, 43);
+}
+
+.project-header{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.project-div{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+#row-2 .project-description, #row-4 .project-description{
+  order: -1;
+}
+
+#row-2, #row-4{
+  background-color: rgb(17,31,34);
+}
+
+.project-description{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4%;
+  max-width: 500px;
+}
+
+.project-description p{
+  margin-top: 0%;
+}
+
+.project-description p span{
+    color: #ff6447; 
+}
+
+.project-picture{
+  margin: 3% 0;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px){
+  .project-picture{
+    padding: 5% 5% 0 5%;
+    margin: 2% 0 0 0;
+  }
+
+  .project-description{
+    margin: 0 5% 5% 5%;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .project-div{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #row-2, #row-4{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.project-picture img {
+  width: 400px;
+}
+
+.project-links{
+  margin: 5% 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+  .project-links{
+    margin: 10% 0 0 0;
+    font-size: 18px;
+  }
+}
+
+.project-links a{
+  margin: 0 5%;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(188, 147, 26);
+}
+
+@media screen and (max-width: 1000px){
+  .project-links a{
+    color: skyblue;
+    font-size: 28px;
+  }
+}
+
+/* --------------------------- contact me section -------------------------------- */
+
+#contact-me-section{
+  position: relative;
+  z-index: 100;
+  background-color: rgb(17,31,34);
+}
+
+#contact-me-section a {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(188, 147, 26);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px){
+  #contact-me-section ul li {
+    padding: 10px;
+    margin: 20px;
+    font-size: 25px;
+  }
+}
+
+.footer-name{
+  margin: 4% 0 0 0;
+}
+
+.footer-headline{
+  margin: 0.5% 0;
+}
+
+.contact-me-wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 45%;
+  margin-left: 55%;
+}
+
+@media screen and (max-width: 1000px){
+  .contact-me-wrapper{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.contact-me-wrapper ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1000px){
+  .contact-me-wrapper ul{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+.contact-me-wrapper li{
+  margin: 3% 3% 3% 0;
+}
+
+.contact-me-wrapper a{
+  text-decoration: none;
+}
+
+.footer-line{
+  background-color: rgb(188, 147, 26);
+  width: 400px;
+  height: 2px;
+}
+
+@media screen and (max-width: 1000px){
+  .footer-line{
+    width: 0;
+  }
+}
