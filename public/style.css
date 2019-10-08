@@ -28,6 +28,12 @@ html,body{
   background-position: right;
 }
 
+@media screen and (orientation: portrait) and (max-width: 1000px){
+  #first-section{
+    background-image: url('./images/astronomy-landscape-image.jpg')
+  }
+}
+
 .first-section-image{
   position: fixed;
   z-index: -200;
@@ -35,10 +41,8 @@ html,body{
   height: 100vh;
 }
 
-
-
 .first-section-wrapper{
-  position: fixed;
+  /* position: fixed; */
   font-size: 50px;
   text-align: center;
 }
@@ -50,12 +54,26 @@ html,body{
   font-size: 30px;
 }
 
+@media screen and (max-width: 800px){
+  .burger-icon{
+    right: 50px;
+    top: 30px;
+  }
+}
+
 .burger{
   width: 28px;
   height: 4px;
   background-color: white;
   margin: 4px 0;
-  
+}
+
+@media screen and (max-width: 800px){
+  .burger{
+    width: 75px;
+    height: 10px;
+    margin: 14px 0;
+  }
 }
 
 /* The navigation menu */
@@ -105,12 +123,22 @@ html,body{
   color: white;
 }
 
+@media screen and (orientation: portrait) and (max-width: 1000px){
+  .name-text{
+    font-size: 110px;
+  }
+}
+
 .headline-text{
   margin-block-start: 1%;
   color: white;
-
 }
 
+@media screen and (orientation: portrait) and (max-width: 1000px){
+  .headline-text{
+    font-size: 60px;
+  }
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~ Second Section ~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #second-section{
