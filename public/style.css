@@ -52,6 +52,7 @@ html,body{
   right: 30px;
   top: 20px;
   font-size: 30px;
+  cursor: pointer;
   z-index: 1050;
 }
 
